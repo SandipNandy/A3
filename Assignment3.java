@@ -21,7 +21,7 @@ public class Assignment3 {
 		System.setProperty("webdriver.chrome.driver", ".\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://rahulshettyacademy.com/loginpagePractise/");
+		driver.get("https://loginpagePractise/");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.id("username")).sendKeys("rahulshettyacademy");
 		driver.findElement(By.id("password")).sendKeys("learning");
