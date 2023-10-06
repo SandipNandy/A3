@@ -35,6 +35,7 @@ public class Assignment3 {
 		driver.manage().window().maximize();
 		
 		driver.get("https://loginpagePractise/");
+		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.id("username")).sendKeys("rahulshettyacademy");
 		driver.findElement(By.id("password")).sendKeys("learning");
