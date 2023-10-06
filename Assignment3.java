@@ -33,6 +33,7 @@ public class Assignment3 {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
+		
 		driver.get("https://loginpagePractise/");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.id("username")).sendKeys("rahulshettyacademy");
