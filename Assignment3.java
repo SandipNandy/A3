@@ -30,8 +30,7 @@ public class Assignment3 {
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='modal-body']/p")));
 		System.out.println(driver.findElement(By.xpath("//div[@class='modal-body']/p")).getText());
 		Actions actions = new Actions(driver);
-		WebElement ClickOKbutton = driver
-				.findElement(By.xpath("//div[@class='modal-content']/div/button[@id='okayBtn']"));
+		WebElement ClickOKbutton = driver.findElement(By.xpath("//div[@class='modal-content']/div/button[@id='okayBtn']"));
 		actions.moveToElement(ClickOKbutton).click().perform();
 		// static drop down selection
 		WebElement staticDropdown = driver.findElement(By.xpath("(//*[@class='form-control'])[3]"));
