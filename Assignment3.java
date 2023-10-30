@@ -20,7 +20,6 @@ public class Assignment3 {
 		System.setProperty("webdriver.chrome.driver", ".\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		
 		driver.get("https://loginpagePractise/");
 		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
